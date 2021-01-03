@@ -1,0 +1,8 @@
+{
+  "name": "Pizza-OrderTracking-App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Bawanthathilan/Pizza-OrderTracking-App.git",
+  "author": "bawanthathilan <bawantharathnayaka@gmail.com>",
+  "license": "MIT"
+}
