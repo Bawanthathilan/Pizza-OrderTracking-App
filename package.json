@@ -4,5 +4,17 @@
   "main": "index.js",
   "repository": "https://github.com/Bawanthathilan/Pizza-OrderTracking-App.git",
   "author": "bawanthathilan <bawantharathnayaka@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "serve": "node server.js",
+    "dev":"nodemon server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
