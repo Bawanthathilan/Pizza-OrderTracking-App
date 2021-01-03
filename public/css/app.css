@@ -24,3 +24,23 @@ section.hero {
   background: #F8F8F8;
 }
 
+.footer-section {
+  background: #F8F8F8;
+}
+
+.size {
+  background: #F8F8F8;
+}
+
+.add-to-cart {
+  border: 2px solid #FE5f1E;
+  color: #FE5f1E;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background: #FE5f1E;
+  border-color: #FFF;
+  color: #FFF;
+}
+
