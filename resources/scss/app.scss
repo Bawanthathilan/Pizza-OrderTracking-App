@@ -1,0 +1,26 @@
+@import './variables';
+
+body{
+    font-family: 'Lato' , sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+}
+
+nav li:last-child a{
+    background: $primary;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+nav li a{
+    transition: $smooth;
+    &:hover{
+        color: $primary;
+    }
+    
+}
+
+section.hero{
+    background: $secondary;
+}
