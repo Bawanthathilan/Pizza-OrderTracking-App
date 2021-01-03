@@ -6,15 +6,27 @@
   "author": "bawanthathilan <bawantharathnayaka@gmail.com>",
   "scripts": {
     "serve": "node server.js",
-    "dev":"nodemon server.js"
+    "dev": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "license": "MIT",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "laravel-mix": "^5.0.4",
+    "nodemon": "^2.0.6",
+    "postcss": "8.1",
+    "resolve-url-loader": "3.1.0",
+    "sass": "^1.32.0",
+    "sass-loader": "8.*",
+    "webpack-livereload-plugin": "^1.2.0"
   }
 }
