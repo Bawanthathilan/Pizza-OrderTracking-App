@@ -53,3 +53,11 @@ section.hero {
   background: #b23301;
 }
 
+section.cart {
+  background: #F8F8F8;
+}
+
+section.cart .amount {
+  color: #FE5f1E;
+}
+
