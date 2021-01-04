@@ -1,7 +1,7 @@
 function cartController(){
     return{
         index(req,res){
-            res.render('customers/cart')
+            return res.render('customers/cart')
         }
         
     }
