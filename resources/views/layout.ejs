@@ -13,11 +13,11 @@
 <body>
     <nav class="container mx-auto flex items-center justify-between py-4">
         <div>
-            <img src="/img/logo.png" width="70px" height="70px" alt="logo">
+            <a href="/"><img src="/img/logo.png" width="70px" height="70px" alt="logo"></a>
         </div>
         <div>
         <ul class="flex items-center">
-            <li class="ml-6"><a href="#">Menu</a></li>
+            <li class="ml-6"><a href="/">Menu</a></li>
             <li class="ml-6"><a href="#">Offers</a></li>
             
             <% if(user) { %>
@@ -25,7 +25,7 @@
                 <form id="logout" action="/logout" method="POST">
                     <a onclick="document.getElementById('logout').submit()" href="#">Logout</a></li>
                 </form>
-                
+                <span class="ml-6"><%= user.name %></span>
             <% } else { %>
 
             <li class="ml-6"><a href="/register">Register</a></li>
