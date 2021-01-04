@@ -5,6 +5,10 @@
             <span class="text-red-500 text-sm"></span>
             
             <div class="mb-4">
+                <% if(messages.error) { %>
+                    <span class="text-red-500 text-sm"><%= messages.error %></span>
+                <% } %>
+
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                     Email
                 </label>
