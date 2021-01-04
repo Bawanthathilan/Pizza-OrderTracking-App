@@ -5291,7 +5291,17 @@ function updateCart(pizza) {
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/update-cart', pizza).then(function (res) {
     cartCounter.innerText = res.data.totalQty;
     new noty__WEBPACK_IMPORTED_MODULE_1___default.a({
-      text: 'Item added to cart'
+      type: 'success',
+      timeout: 1000,
+      text: 'Item added to cart',
+      progressBar: false
+    }).show();
+  })["catch"](function (err) {
+    new noty__WEBPACK_IMPORTED_MODULE_1___default.a({
+      type: 'error',
+      timeout: 1000,
+      text: 'Something went wrong',
+      progressBar: false
     }).show();
   });
 }
