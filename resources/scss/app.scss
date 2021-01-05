@@ -2,103 +2,89 @@
 @import '~noty/src/noty.scss';
 @import '~noty/src/themes/mint.scss';
 
-body{
-    font-family: 'Lato' , sans-serif;
+body {
+    font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     color: $dark;
-    
 }
 
-nav li:last-child a{
+nav li:last-child a {
     background: $primary;
-    &:hover{
+    &:hover {
         background: $primary-hover;
     }
 }
 
-nav li a{
+nav li a {
     transition: $smooth;
-    &:hover{
+    &:hover {
         color: $primary;
     }
-    
 }
-
-section.hero{
+section.hero {
     background: $secondary;
 }
-.footer-section{
+.size {
     background: $secondary;
 }
-.size{
-    background: $secondary;
-}
-.add-to-cart{
+.add-to-cart {
     border: 2px solid $primary;
     color: $primary;
     transition: $smooth;
-    &:hover{
+    &:hover {
         background: $primary;
         border-color: $pure;
         color: $pure;
     }
-
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
 
-.btn-primary{
+.btn-primary {
     background: $primary;
     transition: $smooth;
-    &:hover{
+    &:hover {
         background: $primary-hover;
-        
     }
 }
 
-section.cart{
+section.cart {
     background: $secondary;
-    .amount{
+    .amount {
         color: $primary;
     }
 }
 
-section.login{
+section.login {
     background: $secondary;
     min-height: calc(100vh - 86px);
-
-    a{
+    a {
         color: $primary;
-        &:hover{
+        &:hover {
             color: $primary-hover;
         }
     }
 }
-
-.noty_theme_mint {
-    border-radius: 50px !important;
-    padding-left: 8px !important;
+.noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
 }
 
 a.link {
     color: $primary;
 }
 
-
-.footer-section{
-    background-color: #E2E8F0;
-}
-
-section.status{
+section.status {
     background: $secondary;
     min-height: calc(100vh - 86px);
 }
-
-.status.box{
+.status-box {
     padding: 60px 0 0;
 }
-
+.status-box ul {
+    margin-left: 84px;
+}
 .status-box ul li span {
     position: relative;
     padding-left: 20px;

@@ -2,12 +2,11 @@ const Order = require('../../../models/order');
 const moment = require('moment');
 function orderController(){
     return {
-        store(req,res){
-            //validate req
-            const {phone , address} = req.body;
-            if(!phone || !address){
-                req.flash('error' , 'All fields are required')
-                return res.redirect('/cart')
+        store(req, res) {
+            // Validate request
+            const { phone, address, stripeToken, paymentType } = req.body
+            if(!phone || !address) {
+                return res.status(422).json({ message : 'All fields are required' });
             }
 
             const order = new Order({
@@ -16,7 +15,6 @@ function orderController(){
                 phone,
                 address
             })
-
             order.save().then(result => {
                 req.flash('success' , 'Order placed successfully')
                 delete req.session.cart

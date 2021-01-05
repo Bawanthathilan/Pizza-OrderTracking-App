@@ -312,7 +312,7 @@ body {
 }
 
 nav li:last-child a {
-  background: #FE5f1E;
+  background: #FE5F1E;
 }
 
 nav li:last-child a:hover {
@@ -324,14 +324,10 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #FE5f1E;
+  color: #FE5F1E;
 }
 
 section.hero {
-  background: #F8F8F8;
-}
-
-.footer-section {
   background: #F8F8F8;
 }
 
@@ -340,15 +336,15 @@ section.hero {
 }
 
 .add-to-cart {
-  border: 2px solid #FE5f1E;
-  color: #FE5f1E;
+  border: 2px solid #FE5F1E;
+  color: #FE5F1E;
   transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
-  background: #FE5f1E;
-  border-color: #FFF;
-  color: #FFF;
+  background: #FE5F1E;
+  border-color: #fff;
+  color: #fff;
 }
 
 .add-to-cart:focus {
@@ -356,7 +352,7 @@ section.hero {
 }
 
 .btn-primary {
-  background: #FE5f1E;
+  background: #FE5F1E;
   transition: all 0.3s ease-in-out;
 }
 
@@ -369,7 +365,7 @@ section.cart {
 }
 
 section.cart .amount {
-  color: #FE5f1E;
+  color: #FE5F1E;
 }
 
 section.login {
@@ -378,24 +374,20 @@ section.login {
 }
 
 section.login a {
-  color: #FE5f1E;
+  color: #FE5F1E;
 }
 
 section.login a:hover {
   color: #b23301;
 }
 
-.noty_theme_mint {
+.noty_theme__mint {
   border-radius: 50px !important;
   padding-left: 8px !important;
 }
 
 a.link {
-  color: #FE5f1E;
-}
-
-.footer-section {
-  background-color: #E2E8F0;
+  color: #FE5F1E;
 }
 
 section.status {
@@ -403,8 +395,12 @@ section.status {
   min-height: calc(100vh - 86px);
 }
 
-.status.box {
+.status-box {
   padding: 60px 0 0;
+}
+
+.status-box ul {
+  margin-left: 84px;
 }
 
 .status-box ul li span {
@@ -488,11 +484,11 @@ section.status {
 }
 
 .status-box ul li.current span {
-  color: #FE5f1E;
+  color: #FE5F1E;
 }
 
 .status-box ul li.current span:after {
-  background: #FE5f1E;
+  background: #FE5F1E;
 }
 
 .status-box ul li small {
