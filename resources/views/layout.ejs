@@ -25,7 +25,7 @@
                 <form id="logout" action="/logout" method="POST">
                     <a onclick="document.getElementById('logout').submit()" href="#">Logout</a></li>
                 </form>
-                <span class="ml-6"><%= user.name %></span>
+                <span class=" ml-6 rounded-full text-bold"><%= user.name %></span>
             <% } else { %>
 
             <li class="ml-6"><a href="/register">Register</a></li>
