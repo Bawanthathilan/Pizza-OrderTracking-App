@@ -69,6 +69,10 @@ app.set('view engine','ejs')
 require('./routes/web')(app)
 
 
-app.listen(3000, ()=>{
+const server = app.listen(3000, ()=>{
     console.log(`Listning on port ${PORT}`)
 })
+
+
+//Socket
+const io = require('socket.io')(server)

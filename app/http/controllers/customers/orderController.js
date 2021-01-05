@@ -33,6 +33,14 @@ function orderController(){
                 { sort: { 'createdAt': -1 } } )
             res.header('Cache-Control', 'no-store')
             res.render('customers/orders', { orders: orders, moment: moment })
+        },
+        async show(req, res) {
+            const order = await Order.findById(req.params.id)
+            // Authorize user
+            if(req.user._id.toString() === order.customerId.toString()) {
+                return res.render('customers/singleOrder', { order })
+            }
+            return  res.redirect('/')
         }
     }
 }
