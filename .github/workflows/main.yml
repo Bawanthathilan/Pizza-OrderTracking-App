@@ -14,5 +14,5 @@ jobs:
     - name: Commit changes
       uses: elstudio/actions-js-build/commit@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.SECRET }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUSH_BRANCH: 'master'
